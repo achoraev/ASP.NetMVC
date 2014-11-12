@@ -7,33 +7,33 @@ Design and implement an ASP.NET MVC application. It can be a discussion forum, b
 The application should have public part (accessible without authentication), private part (available for registered users) and administrative part (available for administrators only).
 General Requirements
 Your Web application should use the following technologies, frameworks and development techniques:
-•	Use ASP.NET MVC 5 and Visual Studio 2013
-•	Have at least 15 controllers
-•	Have at least 35 actions
-•	You should use Razor template engine for generating the UI
-o	You may use Kendo UI widgets (with the ASP.NET MVC Wrappers)
-o	ASP.NET WebForms is not allowed
-o	Use at least 3 sections and at least 10 partial views
-o	Use at least 15 editor or display templates
-•	Use MS SQL Server as database back-end
-•	Use Entity Framework 6 to access your database
-o	Using Unit of Work and Repository pattern is a must
-•	Use at least two MVC Area in your project (e.g. for administration)
-•	Create tables with data with server-side paging and sorting for every model entity
-o	You can use Kendo UI Grid or generate your own HTML tables
-•	Adapt the default ASP.NET MVC site template from Visual Studio 2013 or get another free theme
-o	Use responsive design based on Twitter Bootstrap
-o	You may change the standard theme and modify it to apply own web design and visual styles
-•	Use the standard ASP.NET Identity System for managing users and roles
-o	Your registered users should have at least one of the two roles: user and administrator
-•	Use AJAX form and/or SignalR communication in some parts of your application
-•	Write unit tests for your logic, controllers, actions, helpers, etc.
-•	Apply error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side)
-•	Handle correctly the special HTML characters and tags like <br />
-•	Use Ninject (or any other dependency container) and Automapper
-•	Use proper architecture for your application
-•	Prevent yourself from security holes (XSS, XSRF, Parameter Tampering, etc.)
-•	Use GitHub for source control system
+    Use ASP.NET MVC 5 and Visual Studio 2013
+	Have at least 15 controllers
+	Have at least 35 actions
+	You should use Razor template engine for generating the UI
+	You may use Kendo UI widgets (with the ASP.NET MVC Wrappers)
+	ASP.NET WebForms is not allowed
+	Use at least 3 sections and at least 10 partial views
+	Use at least 15 editor or display templates
+	Use MS SQL Server as database back-end
+	Use Entity Framework 6 to access your database
+	Using Unit of Work and Repository pattern is a must
+	Use at least two MVC Area in your project (e.g. for administration)
+	Create tables with data with server-side paging and sorting for every model entity
+	You can use Kendo UI Grid or generate your own HTML tables
+	Adapt the default ASP.NET MVC site template from Visual Studio 2013 or get another free theme
+	Use responsive design based on Twitter Bootstrap
+	You may change the standard theme and modify it to apply own web design and visual styles
+	Use the standard ASP.NET Identity System for managing users and roles
+	Your registered users should have at least one of the two roles: user and administrator
+	Use AJAX form and/or SignalR communication in some parts of your application
+	Write unit tests for your logic, controllers, actions, helpers, etc.
+	Apply error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side)
+	Handle correctly the special HTML characters and tags like <br />
+	Use Ninject (or any other dependency container) and Automapper
+	Use proper architecture for your application
+	Prevent yourself from security holes (XSS, XSRF, Parameter Tampering, etc.)
+	Use GitHub for source control system
 Public Part
 The public part of your projects should be visible without authentication. This public part could be the application start page, the user login and user registration forms, as well as the public data of the users, e.g. the blog posts in a blog system, the public offers in a bid system, the products in an e-commerce system, etc.
 Private Part (User Area)
