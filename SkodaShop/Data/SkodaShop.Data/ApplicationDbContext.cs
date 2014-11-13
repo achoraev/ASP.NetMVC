@@ -7,7 +7,6 @@
 
     using SkodaShop.Data.Migrations;
     using SkodaShop.Data.Models;
-    using SkodaShop.Web.Models;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -22,7 +21,7 @@
             return new ApplicationDbContext();
         }
 
-        public IDbSet<Item> Items { get; set; }
+        public IDbSet<Part> Parts { get; set; }
 
         public IDbSet<Order> Orders { get; set; }
 

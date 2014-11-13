@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using SkodaShop.Web.Models;
+using SkodaShop.Data;
+using SkodaShop.Data.Models;
 
 namespace SkodaShop.Web
 {

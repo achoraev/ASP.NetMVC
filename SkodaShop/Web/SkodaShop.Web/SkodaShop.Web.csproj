@@ -239,6 +239,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\SkodaShop.Data.Models\SkodaShop.Data.Models.csproj">
+      <Project>{cea32b86-33e4-4025-8c26-5c0304582d32}</Project>
+      <Name>SkodaShop.Data.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\SkodaShop.Data\SkodaShop.Data.csproj">
+      <Project>{7ccb1579-ce78-496b-8166-78a9f1e3b8c9}</Project>
+      <Name>SkodaShop.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

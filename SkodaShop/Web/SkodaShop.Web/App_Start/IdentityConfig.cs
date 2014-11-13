@@ -10,7 +10,8 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using SkodaShop.Web.Models;
+using SkodaShop.Data.Models;
+using SkodaShop.Data;
 
 namespace SkodaShop.Web
 {

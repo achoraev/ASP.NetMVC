@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SkodaShop.Web.Models;
+using SkodaShop.Data.Models;
 
 namespace SkodaShop.Web.Controllers
 {
