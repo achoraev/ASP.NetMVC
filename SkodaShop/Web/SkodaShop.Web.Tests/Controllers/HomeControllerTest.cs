@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SkodaShop.Web;
+using SkodaShop.Web.Models;
 using SkodaShop.Web.Controllers;
+using System.Web.Mvc;
 
 namespace SkodaShop.Web.Tests.Controllers
 {
