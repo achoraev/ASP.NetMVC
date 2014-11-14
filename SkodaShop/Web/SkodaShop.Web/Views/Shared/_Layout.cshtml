@@ -30,10 +30,112 @@
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <div class="row">
+            <div class="col-md-3" style="border:1px solid black">
+                <h2>Продуктови групи</h2>
+                <ul>
+                    <li>
+                        <a href="products/products.php?group_id=106">Ауспуси</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=123">Газоразпределитeлен механизъм</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=294">Гарнитури по двигателя</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=112">Горивна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=118">Гориво смазочни материали</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=41">Датчици</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=132">Двигател</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=122">Ел.уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=78">Жила</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=110">Запалителна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=613">Инструменти и оборудване</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=386">Климатична уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=115">Кормилна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=126">Мазилна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=121">Оборудване на автомобила</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=116">Осветителна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=119">Охладителна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=120">Ремъци</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=42">Семеринги</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=57">Скоби</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=128">Спирачна уредба</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=756">Строителна и агротехника</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=113">Трансмисия</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=102">Филтри</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=114">Ходова част</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=470">Части за купето на автомобила</a>
+                    </li>
+                    <li>
+                        <a href="products/products.php?group_id=124">Части за основен ремонт двигател</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            @RenderBody()
+
+            <div class="col-md-3" style="border:1px solid black">
+
+            </div>
+        </div>
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="panel-footer">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="?section=faq">често задавани въпроси</a></li>
+                    <li><a href="?section=returns">условия за връщане</a></li>
+                    <li><a href="?section=about">кои сме ние</a></li>
+                    <li><a href="?section=terms">общи правила и условия</a></li>
+                    <li><a href="?section=contact">връзка с нас</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 
