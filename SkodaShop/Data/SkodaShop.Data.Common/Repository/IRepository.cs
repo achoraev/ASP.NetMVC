@@ -1,4 +1,4 @@
-﻿namespace SkodaShop.Data
+﻿namespace SkodaShop.Data.Common.Repository
 {
     using System;
     using System.Linq;

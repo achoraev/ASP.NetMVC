@@ -7,16 +7,12 @@
     using System.Web.Mvc;
     using SkodaShop.Data.Models;
     using SkodaShop.Data;
+    using SkodaShop.Data.Common.Repository;
 
     public class HomeController : Controller
     {
         private IRepository<Part> parts;
-
-        public HomeController()
-            : this(new GenericRepository<Part>(new ApplicationDbContext()))
-        {
-        }
-
+      
         public HomeController(IRepository<Part> parts)
         {
             this.parts = parts;

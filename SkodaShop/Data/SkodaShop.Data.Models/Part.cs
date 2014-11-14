@@ -13,6 +13,8 @@
         [StringLength(30,MinimumLength=6)]
         public string Name { get; set; }
 
+        public string Description { get; set; }
+
         public string Manufacturer { get; set; }
 
         public int CatalogNumber { get; set; }

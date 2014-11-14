@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkodaShop.Data", "Data\Skod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkodaShop.Data.Models", "Data\SkodaShop.Data.Models\SkodaShop.Data.Models.csproj", "{CEA32B86-33E4-4025-8C26-5C0304582D32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkodaShop.Data.Common", "Data\SkodaShop.Data.Common\SkodaShop.Data.Common.csproj", "{04E1A573-B483-4514-905C-C5E33B582F86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{CEA32B86-33E4-4025-8C26-5C0304582D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEA32B86-33E4-4025-8C26-5C0304582D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEA32B86-33E4-4025-8C26-5C0304582D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E1A573-B483-4514-905C-C5E33B582F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E1A573-B483-4514-905C-C5E33B582F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E1A573-B483-4514-905C-C5E33B582F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E1A573-B483-4514-905C-C5E33B582F86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{ED76B511-9CA5-43B9-81E5-2F764901C7EB} = {C0C8003C-14C2-4592-A1DB-ACECD71AE28B}
 		{7CCB1579-CE78-496B-8166-78A9F1E3B8C9} = {0693FEE5-DB27-411F-A7A2-74019CC18671}
 		{CEA32B86-33E4-4025-8C26-5C0304582D32} = {0693FEE5-DB27-411F-A7A2-74019CC18671}
+		{04E1A573-B483-4514-905C-C5E33B582F86} = {0693FEE5-DB27-411F-A7A2-74019CC18671}
 	EndGlobalSection
 EndGlobal
