@@ -10,11 +10,16 @@
         [Required]
         public decimal Price { get; set; }
 
+        [StringLength(30,MinimumLength=6)]
+        public string Name { get; set; }
+
+        public string Manufacturer { get; set; }
+
         public int CatalogNumber { get; set; }
 
-        public int FromYear { get; set; }
+        public int? FromYear { get; set; }
 
-        public int ToYear { get; set; }
+        public int? ToYear { get; set; }
 
         public string PictureUrl { get; set; }
 
@@ -23,10 +28,10 @@
         public string Model { get; set; }       
 
         [Required]
-        [StringLength(30)]
+        [StringLength(30, MinimumLength=3)]
         public string Categories { get; set; }
 
-        public int OrderId { get; set; }
+        public int? OrderId { get; set; }
 
         public virtual Order Order { get; set; }
     }

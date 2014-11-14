@@ -9,10 +9,24 @@
     using SkodaShop.Data;
 
     public class HomeController : Controller
-    {        
+    {
+        private IRepository<Part> parts;
+
+        public HomeController()
+            : this(new GenericRepository<Part>(new ApplicationDbContext()))
+        {
+        }
+
+        public HomeController(IRepository<Part> parts)
+        {
+            this.parts = parts;
+        }
+
         public ActionResult Index()
-        {            
-            return View();
+        {
+            var parts = this.parts.All();
+
+            return View(parts);
         }
 
         public ActionResult About()

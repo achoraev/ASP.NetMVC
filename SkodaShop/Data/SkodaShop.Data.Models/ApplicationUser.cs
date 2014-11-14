@@ -7,10 +7,10 @@
 
     public class ApplicationUser : IdentityUser
     {
-        public ApplicationUser()
-        {
-            // This will prevent UserManager.CreateAsync from causing exception
-        }
+        //public ApplicationUser()
+        //{
+        //    // This will prevent UserManager.CreateAsync from causing exception
+        //}
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
