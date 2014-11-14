@@ -3,10 +3,12 @@
     ViewBag.Title = "Skoda Shop";
 }
 
-<div class="col-md-6" style="border:1px solid black">
+<div class="col-md-6">
     @foreach (var part in Model)
     {
-        <p>@part.Name</p>
-        <p>@part.Price</p>
+        <ul class="list-group">
+            <li class="list-group-item">@part.Name</li>
+            <li class="list-group-item">@part.Price</li>
+        </ul>        
     }
 </div>
