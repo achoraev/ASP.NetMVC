@@ -10,13 +10,13 @@ namespace SkodaShop.Data.Migrations
         public Configuration()
         {
             this.AutomaticMigrationsEnabled = true;
+
             // TODO make it false finally
             this.AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(ApplicationDbContext context)
         {
-           
         }
     }
 }

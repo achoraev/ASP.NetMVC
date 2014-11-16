@@ -1,5 +1,4 @@
-﻿
-namespace SkodaShop.Web.Controllers
+﻿namespace SkodaShop.Web.Controllers
 {
     using System.Web.Mvc;
 
@@ -8,7 +7,7 @@ namespace SkodaShop.Web.Controllers
         // GET: Terms
         public ActionResult Index()
         {
-            return View();
+            return this.View();
         }
     }
 }

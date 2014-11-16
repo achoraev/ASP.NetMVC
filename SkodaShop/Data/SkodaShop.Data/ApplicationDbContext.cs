@@ -1,5 +1,5 @@
 ﻿namespace SkodaShop.Data
-{    
+{
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -26,8 +26,8 @@
         public IDbSet<Order> Orders { get; set; }
 
         public override int SaveChanges()
-        {      
+        {
             return base.SaveChanges();
-        }        
+        }
     }
 }

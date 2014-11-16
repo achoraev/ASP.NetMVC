@@ -2,16 +2,14 @@
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(SkodaShop.Web.App_Start.NinjectWebCommon), "Stop")]
 
 namespace SkodaShop.Web.App_Start
-{
+{   
     using System;
+    using System.Data.Entity;
     using System.Web;
-
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-
     using Ninject;
     using Ninject.Web.Common;
     using SkodaShop.Data;
-    using System.Data.Entity;
     using SkodaShop.Data.Common.Repository;
 
     public static class NinjectWebCommon 

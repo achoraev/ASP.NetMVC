@@ -1,13 +1,8 @@
 ﻿namespace SkodaShop.Web.Controllers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
     using System.Web.Mvc;
-    using SkodaShop.Data.Models;
-    using SkodaShop.Data;
     using SkodaShop.Data.Common.Repository;
+    using SkodaShop.Data.Models;    
 
     public class HomeController : Controller
     {
@@ -22,21 +17,21 @@
         {
             var parts = this.parts.All();
 
-            return View(parts);
+            return this.View(parts);
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return this.View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return this.View();
         }
     }
 }

@@ -2,13 +2,12 @@
 {
     using System.Web.Mvc;
 
-
     public class FAQController : Controller
     {
         // GET: FAQ
         public ActionResult Question()
         {
-            return View();
+            return this.View();
         }
     }
 }

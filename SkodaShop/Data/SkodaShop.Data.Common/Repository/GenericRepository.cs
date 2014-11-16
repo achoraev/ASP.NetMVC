@@ -1,11 +1,10 @@
 ﻿namespace SkodaShop.Data.Common.Repository
-{
-    using System;    
-    using System.Linq;
-
-    using SkodaShop.Data.Common.Repository;
+{    
+    using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Linq;
+    using SkodaShop.Data.Common.Repository;
 
     public class GenericRepository<T> : IRepository<T> where T : class
     {

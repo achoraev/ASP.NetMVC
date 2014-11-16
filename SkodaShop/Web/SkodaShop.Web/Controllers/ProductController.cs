@@ -5,9 +5,9 @@
     using System.Linq;
     using System.Web;
     using System.Web.Mvc;
-    using SkodaShop.Data.Models;
     using SkodaShop.Data;
     using SkodaShop.Data.Common.Repository;
+    using SkodaShop.Data.Models;
 
     public class ProductController : Controller
     {
@@ -22,7 +22,7 @@
         {
             var parts = this.parts.All();
 
-            return View(parts);
+            return this.View(parts);
         }
     }
 }

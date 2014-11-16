@@ -7,7 +7,7 @@
     {
         private ICollection<Part> parts;
 
-        public Order ()
+        public Order()
         {
             this.parts = new HashSet<Part>();
         }
@@ -23,6 +23,7 @@
             {
                 return this.parts;
             }
+
             set
             {
                 this.parts = value;

@@ -1,9 +1,9 @@
 ﻿namespace SkodaShop.Web.Models
-{
-    using SkodaShop.Data.Models;
+{    
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Linq.Expressions;
+    using SkodaShop.Data.Models;
 
     public class PartViewModel
     {
