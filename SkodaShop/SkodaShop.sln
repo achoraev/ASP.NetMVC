@@ -18,8 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{74AB94
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{75D19E8A-CCF6-4CE5-9390-5A0D69160C60}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkodaShop.Data", "Data\SkodaShop.Data\SkodaShop.Data.csproj", "{7CCB1579-CE78-496B-8166-78A9F1E3B8C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkodaShop.Data.Models", "Data\SkodaShop.Data.Models\SkodaShop.Data.Models.csproj", "{CEA32B86-33E4-4025-8C26-5C0304582D32}"

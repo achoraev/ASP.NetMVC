@@ -1,5 +1,79 @@
-﻿@{
+﻿@model IEnumerable<SkodaShop.Data.Models.Order>
+@{
     ViewBag.Title = "Order";
 }
 
-<h1>Orders</h1>
+@foreach (var order in Model)
+{
+    <div class="col-md-6 list-group">
+
+        <div class="col-md-5 list-group-item">
+            <h3>@order.PartId</h3>
+            <h3>@order.Id</h3>
+            @*@foreach (var part in order.Parts)
+            {
+                <h4>@part.Categories</h4>
+                <h4>@part.Name</h4>
+                <h4>@part.Price</h4>
+            }*@            
+        </div>
+    </div>
+}
+
+<div class="col-md-7">
+
+    <form action="" method="post" id="checkOutForm" role="form">
+        <div class="form-group">
+            <span>Име за контакт:</span><br>
+            <input type="text" name="name" value="" class="form-control"><br />
+        </div>
+        <div class="form-group">
+            <span>Телефон за връзка:</span><br>
+            <input type="text" name="phone" value="" class="form-control"><br />
+        </div>
+        <div class="form-group">
+            <span>Валиден email:</span><br>
+            <input type="text" name="email" value="" class="form-control"><br />
+        </div>
+        <span>Адрес за доставка:</span><br />
+        <div class="dropdown">
+            <select name="addressDrop" class="dropdown-menu">
+                <option value="">изберете адрес за доставка</option>
+                <option value="от нашия офис">от нашия офис</option>
+                <option value="друг">искам частта да бъде доставена на друг адрес</option>
+            </select><br>
+        </div>
+        <span style="font-size:10px;">попълва се само, ако искате да бъде доставено на друг адрес</span><br>
+        <input type="text" name="address" value="" class="form-control"><br>
+        <div class="radio">
+            <span>Изберете начин на плащане:</span><br>
+            <input type="radio" name="payment" id="payPlace" value="на място в офиса">
+            <label for="payPlace">на място в офиса</label><br>
+            <input type="radio" name="payment" id="payRecieve" value="наложен платеж">
+            <label for="payRecieve">наложен платеж</label><br>
+            <input type="radio" name="payment" id="payBank" value="по банков път">
+            <label for="payBank">по банков път</label><br>
+            <input type="radio" name="payment" id="payEpay" value="чрез ePay">
+            <label for="payEpay">чрез ePay</label><br>
+            <input type="radio" name="payment" id="payEasyPay" value="чрез EasyPay">
+            <label for="payEasyPay">чрез EasyPay</label><br><br>
+        </div>
+        <input type="checkbox" name="uslovia" id="uslovia">
+        <label for="uslovia">I agree with <a href="~/Terms/Index">Terms and conditions</a></label><br><br>
+        @*<div class="clear"></div>*@
+        <input type="submit" value="Order">
+    </form>
+    @*<script language="javascript">
+            function updateQty(part, qty) {
+                var jqxhr = $.ajax("http://zakolata.bg/update.php?a=updateQty&p=" + part + "&s=ts644vp1dvo0vjrp0fvbnhfe64&q=" + qty)
+                  .done(function () {
+                      location.reload();
+                  })
+                  .fail(function () {
+                      alert("Възникна грешка, моля опитайте по-късно.");
+                  })
+                  .always(function () {
+                  });
+            }
+        </script>*@
+</div>
