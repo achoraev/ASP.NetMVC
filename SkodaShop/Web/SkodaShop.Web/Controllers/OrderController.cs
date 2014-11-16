@@ -2,11 +2,12 @@
 {
     using System.Web.Mvc;
 
-    public class PartController : Controller
-    {               
+    public class OrderController : Controller
+    {
+        // GET: Order
         public ActionResult Index()
-        {            
+        {
             return View();
-        }        
+        }
     }
 }

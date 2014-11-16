@@ -22,8 +22,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Orders", "Index", "Order")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -31,34 +31,29 @@
     </div>
     <div class="container body-content">
         <div class="row">
-            <div class="col-md-3" class="list-group">
-                <h2>Продуктови групи</h2>
-                <a href="products/products.php?group_id=106" class="list-group-item">Ауспуси</a>
-                <a href="products/products.php?group_id=123" class="list-group-item">Газоразпределитeлен механизъм</a>
-                <a href="products/products.php?group_id=294" class="list-group-item">Гарнитури по двигателя</a>
-                <a href="products/products.php?group_id=112" class="list-group-item">Горивна уредба</a>
-                <a href="products/products.php?group_id=118" class="list-group-item">Гориво смазочни материали</a>
-                <a href="products/products.php?group_id=41" class="list-group-item">Датчици</a>
-                <a href="products/products.php?group_id=132" class="list-group-item">Двигател</a>
-                <a href="products/products.php?group_id=122" class="list-group-item">Ел.уредба</a>
-                <a href="products/products.php?group_id=78" class="list-group-item">Жила</a>
-                <a href="products/products.php?group_id=110" class="list-group-item">Запалителна уредба</a>
-                <a href="products/products.php?group_id=613" class="list-group-item">Инструменти и оборудване</a>
-                <a href="products/products.php?group_id=386" class="list-group-item">Климатична уредба</a>
-                <a href="products/products.php?group_id=115" class="list-group-item">Кормилна уредба</a>
-                <a href="products/products.php?group_id=126" class="list-group-item">Мазилна уредба</a>
-                <a href="products/products.php?group_id=121" class="list-group-item">Оборудване на автомобила</a>
-                <a href="products/products.php?group_id=116" class="list-group-item">Осветителна уредба</a>
-                <a href="products/products.php?group_id=119" class="list-group-item">Охладителна уредба</a>
-                <a href="products/products.php?group_id=120" class="list-group-item">Ремъци</a>
-                <a href="products/products.php?group_id=42" class="list-group-item">Семеринги</a>
-                <a href="products/products.php?group_id=128" class="list-group-item">Спирачна уредба</a>
-                <a href="products/products.php?group_id=756" class="list-group-item">Строителна и агротехника</a>
-                <a href="products/products.php?group_id=113" class="list-group-item">Трансмисия</a>
-                <a href="products/products.php?group_id=102" class="list-group-item">Филтри</a>
-                <a href="products/products.php?group_id=114" class="list-group-item">Ходова част</a>
-                <a href="products/products.php?group_id=470" class="list-group-item">Части за купето на автомобила</a>
-                <a href="products/products.php?group_id=124" class="list-group-item">Части за основен ремонт двигател</a>
+            <div class="col-md-3 list-group">
+                <h2>Product groups</h2>
+                <a href="products/products.php?group_id=106" class="list-group-item">Exhaust</a>                
+                <a href="products/products.php?group_id=112" class="list-group-item">Fuel system</a>
+                <a href="products/products.php?group_id=118" class="list-group-item">Oils</a>
+                <a href="products/products.php?group_id=41" class="list-group-item">Sensors</a>
+                <a href="products/products.php?group_id=132" class="list-group-item">Engine</a>
+                <a href="products/products.php?group_id=122" class="list-group-item">Electric system</a>
+                <a href="products/products.php?group_id=78" class="list-group-item">Cables</a>
+                <a href="products/products.php?group_id=110" class="list-group-item">Ignition system</a>
+                <a href="products/products.php?group_id=613" class="list-group-item">Tools and equipments</a>
+                <a href="products/products.php?group_id=386" class="list-group-item">Airconditions</a>
+                <a href="products/products.php?group_id=115" class="list-group-item">Steering system</a>                
+                <a href="products/products.php?group_id=121" class="list-group-item">Car equipment</a>
+                <a href="products/products.php?group_id=116" class="list-group-item">Lighting system</a>                
+                <a href="products/products.php?group_id=120" class="list-group-item">Belts</a>
+                <a href="products/products.php?group_id=42" class="list-group-item">Semmerings</a>
+                <a href="products/products.php?group_id=128" class="list-group-item">Stoping system</a>                
+                <a href="products/products.php?group_id=113" class="list-group-item">Transmission</a>
+                <a href="products/products.php?group_id=102" class="list-group-item">Filters</a>
+                <a href="products/products.php?group_id=114" class="list-group-item">Chassis parts</a>
+                <a href="products/products.php?group_id=470" class="list-group-item">Body parts</a>
+                <a href="products/products.php?group_id=124" class="list-group-item">Engine parts</a>
             </div>
 
             @RenderBody()
@@ -67,18 +62,19 @@
 
             </div>
         </div>
-        <hr />
-        <footer class="panel-footer">
-            <div class="row list-inline">
-                <a href="~/Home/Index.cshtml" class="col-md-2">Home</a>
-                <a href="?section=faq" class="col-md-2">FAQ</a>
-                <a href="?section=returns" class="col-md-2">Return policy</a>
-                <a href="~/Home/About.cshtml" class="col-md-2">About</a>
-                <a href="?section=terms" class="col-md-2">Term and condition</a>
-                <a href="~/Home/Contact.cshtml" class="col-md-2">Contact</a>
-            </div>
-        </footer>
+        
     </div>
+
+    <footer class="panel-footer">
+        <div class="row list-inline">
+            <a href="~/Home/Index" class="col-md-2">Home</a>
+            <a href="~/FAQ/Question" class="col-md-2">FAQ</a>
+            <a href="#" class="col-md-2">Return policy</a>
+            <a href="~/Home/About" class="col-md-2">About</a>
+            <a href="~/Terms/Index" class="col-md-2">Term and condition</a>
+            <a href="~/Home/Contact" class="col-md-2">Contact</a>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

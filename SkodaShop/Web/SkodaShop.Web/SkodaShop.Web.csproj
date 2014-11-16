@@ -179,9 +179,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FAQController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\PartController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TermsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,7 +200,19 @@
     <Content Include="Content\bootstrap.cerulean.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\bialet.jpg" />
+    <Content Include="Content\img\castrol.jpg" />
+    <Content Include="Content\img\clutch.jpg" />
+    <Content Include="Content\img\disks.jpg" />
+    <Content Include="Content\img\engine.jpg" />
+    <Content Include="Content\img\filters.jpg" />
+    <Content Include="Content\img\icon-sintetika.jpg" />
+    <Content Include="Content\img\no_image.png" />
+    <Content Include="Content\img\octavia2013.jpg" />
+    <Content Include="Content\img\oil.jpg" />
     <Content Include="Content\img\rapid2012.jpg" />
+    <Content Include="Content\img\remak.jpg" />
+    <Content Include="Content\img\superb2014.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -250,6 +266,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Terms\Index.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\FAQ\Question.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
