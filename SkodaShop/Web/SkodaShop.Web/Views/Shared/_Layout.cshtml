@@ -26,6 +26,10 @@
                     <li>@Html.ActionLink("Products", "Index", "Product")</li>
                     <li>@Html.ActionLink("Orders", "Index", "Order")</li>
                     <li>@Html.ActionLink("Cart", "Index", "Cart")</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
+                    }                    
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -35,27 +39,27 @@
         <div class="row">
             <div class="col-md-3 list-group">
                 <h2>Product groups</h2>
-                <a href="products/products.php?group_id=106" class="list-group-item">Exhaust</a>                
-                <a href="products/products.php?group_id=112" class="list-group-item">Fuel system</a>
-                <a href="products/products.php?group_id=118" class="list-group-item">Oils</a>
-                <a href="products/products.php?group_id=41" class="list-group-item">Sensors</a>
-                <a href="products/products.php?group_id=132" class="list-group-item">Engine</a>
-                <a href="products/products.php?group_id=122" class="list-group-item">Electric system</a>
-                <a href="products/products.php?group_id=78" class="list-group-item">Cables</a>
-                <a href="products/products.php?group_id=110" class="list-group-item">Ignition system</a>
-                <a href="products/products.php?group_id=613" class="list-group-item">Tools and equipments</a>
-                <a href="products/products.php?group_id=386" class="list-group-item">Airconditions</a>
-                <a href="products/products.php?group_id=115" class="list-group-item">Steering system</a>                
-                <a href="products/products.php?group_id=121" class="list-group-item">Car equipment</a>
-                <a href="products/products.php?group_id=116" class="list-group-item">Lighting system</a>                
-                <a href="products/products.php?group_id=120" class="list-group-item">Belts</a>
-                <a href="products/products.php?group_id=42" class="list-group-item">Semmerings</a>
-                <a href="products/products.php?group_id=128" class="list-group-item">Stoping system</a>                
-                <a href="products/products.php?group_id=113" class="list-group-item">Transmission</a>
-                <a href="products/products.php?group_id=102" class="list-group-item">Filters</a>
-                <a href="products/products.php?group_id=114" class="list-group-item">Chassis parts</a>
-                <a href="products/products.php?group_id=470" class="list-group-item">Body parts</a>
-                <a href="products/products.php?group_id=124" class="list-group-item">Engine parts</a>
+                <a href="#" class="list-group-item">Exhaust</a>                
+                <a href="#" class="list-group-item">Fuel system</a>
+                <a href="#" class="list-group-item">Oils</a>
+                <a href="#" class="list-group-item">Sensors</a>
+                <a href="#" class="list-group-item">Engine</a>
+                <a href="#" class="list-group-item">Electric system</a>
+                <a href="#" class="list-group-item">Cables</a>
+                <a href="#" class="list-group-item">Ignition system</a>
+                <a href="#" class="list-group-item">Tools and equipments</a>
+                <a href="#" class="list-group-item">Airconditions</a>
+                <a href="#" class="list-group-item">Steering system</a>                
+                <a href="#" class="list-group-item">Car equipment</a>
+                <a href="#" class="list-group-item">Lighting system</a>                
+                <a href="#" class="list-group-item">Belts</a>
+                <a href="#" class="list-group-item">Semmerings</a>
+                <a href="#" class="list-group-item">Stoping system</a>                
+                <a href="#" class="list-group-item">Transmission</a>
+                <a href="#" class="list-group-item">Filters</a>
+                <a href="#" class="list-group-item">Chassis parts</a>
+                <a href="#" class="list-group-item">Body parts</a>
+                <a href="#" class="list-group-item">Engine parts</a>
             </div>
 
             @RenderBody()
