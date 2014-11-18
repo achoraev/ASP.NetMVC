@@ -15,7 +15,16 @@
         [Key]
         public int Id { get; set; }
 
+        [Required]
         public int PartId { get; set; }
+
+        public string ReceiverName { get; set; }
+
+        public int PhoneNumber { get; set; }
+
+        public string Email { get; set; }
+
+        public string Address { get; set; }
 
         public virtual ICollection<Part> Parts
         {

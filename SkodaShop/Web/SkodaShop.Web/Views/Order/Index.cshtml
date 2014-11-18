@@ -1,24 +1,40 @@
-﻿@model IEnumerable<SkodaShop.Data.Models.Order>
+﻿@model IEnumerable<SkodaShop.Data.Models.Part>
 @{
     ViewBag.Title = "Order";
 }
 
-@foreach (var order in Model)
-{
-    <div class="col-md-6 list-group">
+<div class="table-responsive col-md-7">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Price</td>
+                <td>Name</td>
+                <td>Manufacturer</td>
+                <td>Catalog Number</td>
+                <td>Make</td>
+                <td>Model</td>
+                <td>Categories</td>
+                <td>Description</td>
+            </tr>
+        </thead>
 
-        <div class="col-md-5 list-group-item">
-            <h3>@order.PartId</h3>
-            <h3>@order.Id</h3>
-            @*@foreach (var part in order.Parts)
+        <tbody>
+            @foreach (var part in Model)
             {
-                <h4>@part.Categories</h4>
-                <h4>@part.Name</h4>
-                <h4>@part.Price</h4>
-            }*@            
-        </div>
-    </div>
-}
+                <tr>
+                    <td>@part.Price</td>
+                    <td>@part.Name</td>
+                    <td>@part.Manufacturer</td>
+                    <td>@part.CatalogNumber</td>
+                    <td>@part.Make</td>
+                    <td>@part.Model</td>
+                    <td>@part.Categories</td>
+                    <td>@part.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
 <div class="col-md-7">
 

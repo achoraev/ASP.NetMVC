@@ -6,18 +6,18 @@
 
     public class OrderController : Controller
     {
-        private IRepository<Order> orders;
+        private IRepository<Part> parts;
 
-        public OrderController(IRepository<Order> orders)
+        public OrderController(IRepository<Part> parts)
         {
-            this.orders = orders;
+            this.parts = parts;
         }
 
         public ActionResult Index()
         {
-            var orders = this.orders.All();
+            var parts = this.parts.All();
 
-            return this.View(orders);
+            return this.View(parts);
         }
     }
 }
