@@ -3,21 +3,23 @@
     using SkodaShop.Data.Common.Repository;
     using SkodaShop.Data.Models;
     using System.Web.Mvc;
+    using System.Linq;
 
     public class OrderController : Controller
     {
-        private IRepository<Part> parts;
+        // todo change part with orders
+        private IRepository<Order> orders;
 
-        public OrderController(IRepository<Part> parts)
+        public OrderController(IRepository<Order> orders)
         {
-            this.parts = parts;
+            this.orders = orders;
         }
 
         public ActionResult Index()
         {
-            var parts = this.parts.All();
+            var orders = this.orders.All();
 
-            return this.View(parts);
+            return this.View(orders);
         }
     }
 }

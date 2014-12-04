@@ -65,6 +65,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SkodaShop.Data.Common\SkodaShop.Data.Common.csproj">
+      <Project>{04e1a573-b483-4514-905c-c5e33b582f86}</Project>
+      <Name>SkodaShop.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SkodaShop.Data.Models\SkodaShop.Data.Models.csproj">
       <Project>{cea32b86-33e4-4025-8c26-5c0304582d32}</Project>
       <Name>SkodaShop.Data.Models</Name>
